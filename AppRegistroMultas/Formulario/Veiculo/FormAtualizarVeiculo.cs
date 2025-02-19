@@ -9,7 +9,6 @@ namespace AppRegistroMultas.Formulario
 {
     public partial class FormAtualizarVeiculo : Form
     {
-        int contExc = 0;
         List<Veiculo> ListaVeiculos = new List<Veiculo>();
 
         public FormAtualizarVeiculo()
@@ -26,20 +25,23 @@ namespace AppRegistroMultas.Formulario
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             var linhaSelec = comboBox1.SelectedIndex;
-            if (linhaSelec > -1 && contExc > 0)
+            if (linhaSelec > -1)
             {
                 var veiculosSelec = ListaVeiculos[linhaSelec];
                 txtMarca.Text = veiculosSelec.Marca;
                 txtModelo.Text = veiculosSelec.Modelo;
                 txtPlaca.Text = veiculosSelec.Placa;
             }
-            contExc++;
+            else
+            {
+                txtMarca.Clear(); txtModelo.Clear(); txtPlaca.Clear();
+            }
         }
 
         private void btAtualizar_Click(object sender, EventArgs e)
         {
             var linhaSelec = comboBox1.SelectedIndex;
-            if (linhaSelec > -1 && contExc > 0)
+            if (linhaSelec > -1)
             {
                 var veiculosSelec = ListaVeiculos[linhaSelec];
                 veiculosSelec.Marca = txtMarca.Text;
@@ -48,10 +50,9 @@ namespace AppRegistroMultas.Formulario
 
                 VeiculoContext context = new VeiculoContext();
                 context.AtualizarVeiculo(veiculosSelec);
-                MessageBox.Show("ATUALIZADO COM SUCESSO", "2ºA INF", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 comboBox1.SelectedIndex = -1;
-                txtMarca.Clear(); txtModelo.Clear(); txtPlaca.Clear();
+                txtMarca.Clear(); txtModelo.Clear(); txtPlaca.Clear(); comboBox1.SelectedIndex = -1;
             }
         }
     }

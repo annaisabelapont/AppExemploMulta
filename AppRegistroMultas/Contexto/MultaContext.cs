@@ -64,11 +64,13 @@ namespace AppRegistroMultas.Contexto
 
                 conexao.Open(); // Abrir as portas do banco
                 int LinhasAfestadas = comando.ExecuteNonQuery(); //executa o comando e mostrar quantas linhas foran afetadas
+
+                MessageBox.Show("Multa cadastrada com sucesso!");
             }
 
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao inserir multa: " + ex.Message);
+                
             }
 
             finally
@@ -78,7 +80,7 @@ namespace AppRegistroMultas.Contexto
         }//fim do método para inserir veículos
 
         public void AtualizarMulta(Multa multa)
-        {            // Comando SQL para atualizar os dados da pessoa
+        {
             string sql = "UPDATE MULTA SET Descricao = @Descricao, ValorMulta = @ValorMulta, VeiculoId = @VeiculoId WHERE Id = @Id";
 
             try

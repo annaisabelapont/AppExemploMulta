@@ -22,8 +22,6 @@ namespace AppRegistroMultas.Formulario
             VeiculoContext veiculoContext = new VeiculoContext();
             veiculoContext.InserirVeiculo(veiculo);
 
-            MessageBox.Show("SALVO COM SUCESSO","2A INF",MessageBoxButtons.OK, MessageBoxIcon.Information);
-
             Limpar();
         }
 

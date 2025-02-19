@@ -67,6 +67,8 @@ namespace AppRegistroMultas.Contexto
 
                 conexao.Open(); // Abrir as portas do banco
                 int LinhasAfestadas = comando.ExecuteNonQuery(); //executa o comando e mostrar quantas linhas foran afetadas
+
+                MessageBox.Show("Veículo cadastrado com sucesso!");
             }
 
             catch (Exception ex)
@@ -99,7 +101,7 @@ namespace AppRegistroMultas.Contexto
 
                 if (LinhasAfestadas > 0)
                 {
-                    MessageBox.Show("Veículo atualizada com sucesso!");
+                    MessageBox.Show("Veículo atualizado com sucesso!");
                 }
 
                 else

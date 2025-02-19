@@ -54,15 +54,15 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(723, 42);
             this.label5.TabIndex = 43;
-            this.label5.Text = "ATUALIZAÇÃO DE MULTA";
+            this.label5.Text = "ATUALIZAR MULTA";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btAtualizar
             // 
-            this.btAtualizar.BackColor = System.Drawing.Color.LightCoral;
+            this.btAtualizar.BackColor = System.Drawing.Color.LightGreen;
             this.btAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.btAtualizar.ForeColor = System.Drawing.Color.Maroon;
-            this.btAtualizar.Location = new System.Drawing.Point(414, 383);
+            this.btAtualizar.ForeColor = System.Drawing.Color.Green;
+            this.btAtualizar.Location = new System.Drawing.Point(242, 410);
             this.btAtualizar.Margin = new System.Windows.Forms.Padding(4);
             this.btAtualizar.Name = "btAtualizar";
             this.btAtualizar.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -76,7 +76,7 @@
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(77, 62);
+            this.label6.Location = new System.Drawing.Point(84, 77);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(531, 25);
@@ -90,7 +90,7 @@
             this.cbVeiculo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbVeiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbVeiculo.FormattingEnabled = true;
-            this.cbVeiculo.Location = new System.Drawing.Point(39, 91);
+            this.cbVeiculo.Location = new System.Drawing.Point(46, 106);
             this.cbVeiculo.Margin = new System.Windows.Forms.Padding(4);
             this.cbVeiculo.Name = "cbVeiculo";
             this.cbVeiculo.Size = new System.Drawing.Size(632, 33);
@@ -102,7 +102,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(419, 206);
+            this.label3.Location = new System.Drawing.Point(426, 221);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(161, 20);
@@ -114,7 +114,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(35, 206);
+            this.label2.Location = new System.Drawing.Point(42, 221);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(166, 20);
@@ -126,7 +126,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(35, 147);
+            this.label1.Location = new System.Drawing.Point(42, 162);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(175, 20);
@@ -136,7 +136,7 @@
             // txtPlaca
             // 
             this.txtPlaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPlaca.Location = new System.Drawing.Point(423, 231);
+            this.txtPlaca.Location = new System.Drawing.Point(430, 246);
             this.txtPlaca.Margin = new System.Windows.Forms.Padding(4);
             this.txtPlaca.Name = "txtPlaca";
             this.txtPlaca.Size = new System.Drawing.Size(248, 30);
@@ -145,7 +145,7 @@
             // txtMarca
             // 
             this.txtMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMarca.Location = new System.Drawing.Point(39, 231);
+            this.txtMarca.Location = new System.Drawing.Point(46, 246);
             this.txtMarca.Margin = new System.Windows.Forms.Padding(4);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(248, 30);
@@ -154,7 +154,7 @@
             // txtModelo
             // 
             this.txtModelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtModelo.Location = new System.Drawing.Point(39, 172);
+            this.txtModelo.Location = new System.Drawing.Point(46, 187);
             this.txtModelo.Margin = new System.Windows.Forms.Padding(4);
             this.txtModelo.Name = "txtModelo";
             this.txtModelo.Size = new System.Drawing.Size(632, 30);
@@ -165,7 +165,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(419, 308);
+            this.label7.Location = new System.Drawing.Point(426, 323);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(191, 20);
@@ -177,7 +177,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(35, 307);
+            this.label8.Location = new System.Drawing.Point(42, 322);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(145, 20);
@@ -187,7 +187,7 @@
             // txtDescricao
             // 
             this.txtDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescricao.Location = new System.Drawing.Point(423, 332);
+            this.txtDescricao.Location = new System.Drawing.Point(430, 347);
             this.txtDescricao.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(248, 30);
@@ -196,7 +196,7 @@
             // txtValor
             // 
             this.txtValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValor.Location = new System.Drawing.Point(39, 331);
+            this.txtValor.Location = new System.Drawing.Point(46, 346);
             this.txtValor.Margin = new System.Windows.Forms.Padding(4);
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(262, 30);
@@ -205,7 +205,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Firebrick;
-            this.panel1.Location = new System.Drawing.Point(39, 283);
+            this.panel1.Location = new System.Drawing.Point(46, 298);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(632, 10);
@@ -215,7 +215,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(724, 437);
+            this.ClientSize = new System.Drawing.Size(724, 489);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);

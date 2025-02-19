@@ -8,13 +8,12 @@ using AppRegistroMultas.Models;
 
 namespace AppRegistroMultas.Formulario
 {
-    public partial class FormConsultaVeiculo : Form
+    public partial class FormConsultarMultas : Form
     {
-        int cont = 1; 
         List<Veiculo> listaVeiculos = new List<Veiculo>();  
         List<Multa> listaMulta = new List<Multa>();
 
-        public FormConsultaVeiculo()
+        public FormConsultarMultas()
         {
             InitializeComponent();
 
@@ -32,7 +31,7 @@ namespace AppRegistroMultas.Formulario
         private void cbVeiculo_SelectedIndexChanged(object sender, EventArgs e)
         {
             int linhaSelec = cbVeiculo.SelectedIndex;
-            if (linhaSelec > -1 && cont > 1)
+            if (linhaSelec > -1)
             {
                 var veiculo = listaVeiculos[linhaSelec];
                 txtModelo.Text = veiculo.Modelo;
@@ -43,7 +42,10 @@ namespace AppRegistroMultas.Formulario
 
                 dtTabela.DataSource = listaMultasVinc.ToList();
             }
-            cont++;
+            else
+            {
+                txtModelo.Clear(); txtMarca.Clear(); txtPlaca.Clear(); dtTabela.DataSource = new List<Multa>();
+            }
         }
     }
 }

@@ -9,9 +9,7 @@ namespace AppRegistroMultas.Formulario
 {
     public partial class FormCadastroMulta : Form
     {
-        int cont = 1;
         int idVeiculo;
-        static int idMulta = 1;
 
         public List<Veiculo> listaVeiculos = new List<Veiculo>();    
         public List<Multa> listaMultasTemp = new List<Multa>();
@@ -29,7 +27,7 @@ namespace AppRegistroMultas.Formulario
         private void cbVeiculo_SelectedIndexChanged(object sender, EventArgs e)
         {
             int linhaSelec = cbVeiculo.SelectedIndex;
-            if(linhaSelec>-1 && cont > 1)
+            if(linhaSelec >- 1)
             {
                 var veiculo = listaVeiculos[linhaSelec]; 
                 txtModelo.Text = veiculo.Modelo;
@@ -37,7 +35,12 @@ namespace AppRegistroMultas.Formulario
                 txtPlaca.Text = veiculo.Placa;
                 idVeiculo = veiculo.Id;
             }
-            cont++; 
+            else
+            {
+                txtDescricao.Clear(); txtValor.Clear();
+                txtMarca.Clear(); txtModelo.Clear();
+                txtPlaca.Clear();
+            }
         }
 
         private void btAdd_Click(object sender, EventArgs e)
@@ -46,12 +49,9 @@ namespace AppRegistroMultas.Formulario
 
             multa.Descricao = txtDescricao.Text;    
             multa.ValorMulta = Convert.ToDecimal(txtValor.Text);
-            multa.Id = idMulta;
             multa.VeiculoId = idVeiculo;
 
             listaMultasTemp.Add(multa);
-
-            idMulta++;
 
             //
 
@@ -77,15 +77,12 @@ namespace AppRegistroMultas.Formulario
             if (listaMultasTemp.Count == 0)
             {
                 MessageBox.Show("NÃO HÁ MULTAS", "2°A INF", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
             }
 
             foreach (var multa in listaMultasTemp)
             {
                 multaContext.InserirMulta(multa);
             }
-
-            MessageBox.Show("MULTAS SALVAS COM SUCESSO", "2A INF", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             txtDescricao.Clear();
             txtValor.Clear();

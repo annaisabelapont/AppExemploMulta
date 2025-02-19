@@ -35,8 +35,6 @@ namespace AppRegistroMultas.Formulario
                 MultaContext context = new MultaContext();
                 context.AtualizarMulta(multaSelecionada);
 
-                MessageBox.Show("ATUALIZADO COM SUCESSO!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                 cbVeiculo.SelectedIndex = -1;
                 txtMarca.Clear();
                 txtModelo.Clear();
@@ -56,20 +54,12 @@ namespace AppRegistroMultas.Formulario
                 txtValor.Text = multaSelecionada.ValorMulta.ToString("N2");
 
                 VeiculoContext veiculoContext = new VeiculoContext();
+
                 var veiculo = veiculoContext.ListarVeiculos().FirstOrDefault(veic => veic.Id == multaSelecionada.VeiculoId);
 
-                if (veiculo != null)
-                {
-                    txtModelo.Text = veiculo.Modelo;
-                    txtMarca.Text = veiculo.Marca;
-                    txtPlaca.Text = veiculo.Placa;
-                }
-                else
-                {
-                    txtModelo.Clear();
-                    txtMarca.Clear();
-                    txtPlaca.Clear();
-                }
+                txtModelo.Text = veiculo.Modelo;
+                txtMarca.Text = veiculo.Marca;
+                txtPlaca.Text = veiculo.Placa;
             }
             else
             {

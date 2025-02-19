@@ -1,6 +1,6 @@
 ﻿namespace AppRegistroMultas.Formulario
 {
-    partial class FormConsultaVeiculo
+    partial class FormConsultarMultas
     {
         /// <summary>
         /// Required designer variable.
@@ -40,13 +40,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.dtTabela = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtTabela)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(112, 84);
+            this.label7.Location = new System.Drawing.Point(112, 89);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(531, 20);
@@ -58,8 +59,8 @@
             // 
             this.cbVeiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbVeiculo.FormattingEnabled = true;
-            this.cbVeiculo.Location = new System.Drawing.Point(73, 107);
-            this.cbVeiculo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbVeiculo.Location = new System.Drawing.Point(73, 112);
+            this.cbVeiculo.Margin = new System.Windows.Forms.Padding(4);
             this.cbVeiculo.Name = "cbVeiculo";
             this.cbVeiculo.Size = new System.Drawing.Size(616, 33);
             this.cbVeiculo.TabIndex = 71;
@@ -69,10 +70,10 @@
             // 
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Firebrick;
-            this.label8.Location = new System.Drawing.Point(8, 15);
+            this.label8.Location = new System.Drawing.Point(1, 20);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(724, 30);
+            this.label8.Size = new System.Drawing.Size(765, 30);
             this.label8.TabIndex = 70;
             this.label8.Text = "CONSULTAR MULTAS";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -81,7 +82,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(68, 229);
+            this.label6.Location = new System.Drawing.Point(68, 234);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(75, 20);
@@ -91,8 +92,8 @@
             // txtPlaca
             // 
             this.txtPlaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPlaca.Location = new System.Drawing.Point(73, 253);
-            this.txtPlaca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPlaca.Location = new System.Drawing.Point(73, 258);
+            this.txtPlaca.Margin = new System.Windows.Forms.Padding(4);
             this.txtPlaca.Name = "txtPlaca";
             this.txtPlaca.Size = new System.Drawing.Size(616, 30);
             this.txtPlaca.TabIndex = 66;
@@ -101,7 +102,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(401, 164);
+            this.label1.Location = new System.Drawing.Point(401, 169);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 20);
@@ -112,7 +113,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(69, 164);
+            this.label4.Location = new System.Drawing.Point(69, 169);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(95, 20);
@@ -122,8 +123,8 @@
             // txtMarca
             // 
             this.txtMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMarca.Location = new System.Drawing.Point(405, 187);
-            this.txtMarca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMarca.Location = new System.Drawing.Point(405, 192);
+            this.txtMarca.Margin = new System.Windows.Forms.Padding(4);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(285, 30);
             this.txtMarca.TabIndex = 63;
@@ -131,8 +132,8 @@
             // txtModelo
             // 
             this.txtModelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtModelo.Location = new System.Drawing.Point(73, 187);
-            this.txtModelo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtModelo.Location = new System.Drawing.Point(73, 192);
+            this.txtModelo.Margin = new System.Windows.Forms.Padding(4);
             this.txtModelo.Name = "txtModelo";
             this.txtModelo.Size = new System.Drawing.Size(284, 30);
             this.txtModelo.TabIndex = 62;
@@ -140,7 +141,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Firebrick;
-            this.panel1.Location = new System.Drawing.Point(47, 300);
+            this.panel1.Location = new System.Drawing.Point(47, 310);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(665, 12);
@@ -149,27 +150,39 @@
             // dtTabela
             // 
             this.dtTabela.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtTabela.Location = new System.Drawing.Point(47, 341);
-            this.dtTabela.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtTabela.Location = new System.Drawing.Point(47, 359);
+            this.dtTabela.Margin = new System.Windows.Forms.Padding(4);
             this.dtTabela.Name = "dtTabela";
             this.dtTabela.RowHeadersWidth = 51;
-            this.dtTabela.Size = new System.Drawing.Size(669, 214);
+            this.dtTabela.Size = new System.Drawing.Size(669, 220);
             this.dtTabela.TabIndex = 57;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Firebrick;
-            this.panel2.Location = new System.Drawing.Point(47, 55);
+            this.panel2.Location = new System.Drawing.Point(47, 60);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(665, 12);
             this.panel2.TabIndex = 73;
             // 
-            // FormConsultaVeiculo
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(112, 336);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(531, 20);
+            this.label2.TabIndex = 74;
+            this.label2.Text = "LISTA DE MULTAS";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // FormConsultarMultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(764, 587);
+            this.ClientSize = new System.Drawing.Size(764, 609);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.cbVeiculo);
@@ -182,8 +195,8 @@
             this.Controls.Add(this.txtModelo);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dtTabela);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "FormConsultaVeiculo";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "FormConsultarMultas";
             this.Text = "CONSULTA DE VEÍCULOS";
             ((System.ComponentModel.ISupportInitialize)(this.dtTabela)).EndInit();
             this.ResumeLayout(false);
@@ -205,5 +218,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dtTabela;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label2;
     }
 }

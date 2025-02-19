@@ -25,7 +25,7 @@ namespace AppRegistroMultas
 
         private void btConsulta_Click(object sender, EventArgs e)
         {
-            FormConsultaVeiculo form = new FormConsultaVeiculo();
+            FormConsultarMultas form = new FormConsultarMultas();
             form.ShowDialog();
         }
 
@@ -44,6 +44,12 @@ namespace AppRegistroMultas
         private void btDeletarMulta_Click(object sender, EventArgs e)
         {
             FormDeletarMulta form = new FormDeletarMulta();
+            form.ShowDialog();
+        }
+
+        private void btConsultaVeiculo_Click(object sender, EventArgs e)
+        {
+            FormConsultarVeiculo form = new FormConsultarVeiculo();
             form.ShowDialog();
         }
     }

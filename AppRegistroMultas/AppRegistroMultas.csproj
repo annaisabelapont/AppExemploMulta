@@ -98,7 +98,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contexto\Context.cs" />
     <Compile Include="Contexto\MultaContext.cs" />
     <Compile Include="Contexto\VeiculoContext.cs" />
     <Compile Include="Form1.cs">
@@ -106,6 +105,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario\Veiculo\FormConsultarVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario\Veiculo\FormConsultarVeiculo.Designer.cs">
+      <DependentUpon>FormConsultarVeiculo.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulario\Multa\FormAtualizarMulta.cs">
       <SubType>Form</SubType>
@@ -131,11 +136,11 @@
     <Compile Include="Formulario\Multa\FormCadastroMulta.Designer.cs">
       <DependentUpon>FormCadastroMulta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario\Veiculo\FormConsultaVeiculo.cs">
+    <Compile Include="Formulario\Multa\FormConsultarMultas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario\Veiculo\FormConsultaVeiculo.Designer.cs">
-      <DependentUpon>FormConsultaVeiculo.cs</DependentUpon>
+    <Compile Include="Formulario\Multa\FormConsultarMultas.Designer.cs">
+      <DependentUpon>FormConsultarMultas.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulario\Multa\FormDeletarMulta.cs">
       <SubType>Form</SubType>
@@ -162,11 +167,14 @@
     <EmbeddedResource Include="Formulario\Multa\FormCadastroMulta.resx">
       <DependentUpon>FormCadastroMulta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario\Veiculo\FormConsultaVeiculo.resx">
-      <DependentUpon>FormConsultaVeiculo.cs</DependentUpon>
+    <EmbeddedResource Include="Formulario\Multa\FormConsultarMultas.resx">
+      <DependentUpon>FormConsultarMultas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulario\Multa\FormDeletarMulta.resx">
       <DependentUpon>FormDeletarMulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulario\Veiculo\FormConsultarVeiculo.resx">
+      <DependentUpon>FormConsultarVeiculo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
