@@ -14,7 +14,7 @@ namespace AppRegistroMultas.Formulario
 
         private void btSalvar_Click(object sender, EventArgs e)
         {
-            Veiculo veiculo = new Veiculo();
+            Models.Veiculo veiculo = new Models.Veiculo();
             veiculo.Modelo = txtModelo.Text;
             veiculo.Marca = txtMarca.Text;    
             veiculo.Placa = txtPlaca.Text;  

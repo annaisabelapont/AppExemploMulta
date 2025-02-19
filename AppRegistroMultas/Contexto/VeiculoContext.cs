@@ -121,6 +121,41 @@ namespace AppRegistroMultas.Contexto
             }
         } // fim do Atualizar veiculo
 
+        public void DeletarVeiculo(Veiculo veiculo)
+        {
+            string sql = "delete from veiculo where Id = @Id";
+
+            try
+            {
+                MySqlCommand comando = new MySqlCommand(sql, conexao);
+
+                comando.Parameters.AddWithValue("@Id", veiculo.Id);
+
+                conexao.Open();
+                int LinhasAfestadas = comando.ExecuteNonQuery();
+
+                if (LinhasAfestadas > 0)
+                {
+                    MessageBox.Show("Veículo e suas multas foram deletados com sucesso!");
+                }
+
+                else
+                {
+                    MessageBox.Show("Nenhum registro foi deletado. Verifique o ID informado.");
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao deletar veículo: " + ex.Message);
+            }
+
+            finally
+            {
+                conexao.Close();
+            }
+        }
+
     }//fim da classe
 
 }//fim do namespace

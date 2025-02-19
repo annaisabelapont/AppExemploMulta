@@ -10,7 +10,7 @@ namespace AppRegistroMultas.Formulario
 {
     public partial class FormConsultarMultas : Form
     {
-        List<Veiculo> listaVeiculos = new List<Veiculo>();  
+        List<Models.Veiculo> listaVeiculos = new List<Models.Veiculo>();  
         List<Multa> listaMulta = new List<Multa>();
 
         public FormConsultarMultas()

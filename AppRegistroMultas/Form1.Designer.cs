@@ -38,12 +38,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.btConsultaVeiculo = new System.Windows.Forms.Button();
+            this.btDeletarVeiculo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btConsulta
             // 
             this.btConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btConsulta.Location = new System.Drawing.Point(62, 485);
+            this.btConsulta.Location = new System.Drawing.Point(62, 531);
             this.btConsulta.Margin = new System.Windows.Forms.Padding(4);
             this.btConsulta.Name = "btConsulta";
             this.btConsulta.Size = new System.Drawing.Size(628, 52);
@@ -55,7 +56,7 @@
             // btCadastroMulta
             // 
             this.btCadastroMulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCadastroMulta.Location = new System.Drawing.Point(62, 305);
+            this.btCadastroMulta.Location = new System.Drawing.Point(62, 351);
             this.btCadastroMulta.Margin = new System.Windows.Forms.Padding(4);
             this.btCadastroMulta.Name = "btCadastroMulta";
             this.btCadastroMulta.Size = new System.Drawing.Size(628, 52);
@@ -91,7 +92,7 @@
             // btAtualizarMulta
             // 
             this.btAtualizarMulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btAtualizarMulta.Location = new System.Drawing.Point(62, 365);
+            this.btAtualizarMulta.Location = new System.Drawing.Point(62, 411);
             this.btAtualizarMulta.Margin = new System.Windows.Forms.Padding(4);
             this.btAtualizarMulta.Name = "btAtualizarMulta";
             this.btAtualizarMulta.Size = new System.Drawing.Size(628, 52);
@@ -103,7 +104,7 @@
             // btDeletarMulta
             // 
             this.btDeletarMulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btDeletarMulta.Location = new System.Drawing.Point(62, 425);
+            this.btDeletarMulta.Location = new System.Drawing.Point(62, 471);
             this.btDeletarMulta.Margin = new System.Windows.Forms.Padding(4);
             this.btDeletarMulta.Name = "btDeletarMulta";
             this.btDeletarMulta.Size = new System.Drawing.Size(628, 52);
@@ -127,7 +128,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.IndianRed;
-            this.panel1.Location = new System.Drawing.Point(62, 280);
+            this.panel1.Location = new System.Drawing.Point(62, 334);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(628, 10);
             this.panel1.TabIndex = 75;
@@ -147,7 +148,7 @@
             // btConsultaVeiculo
             // 
             this.btConsultaVeiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btConsultaVeiculo.Location = new System.Drawing.Point(62, 212);
+            this.btConsultaVeiculo.Location = new System.Drawing.Point(62, 272);
             this.btConsultaVeiculo.Margin = new System.Windows.Forms.Padding(4);
             this.btConsultaVeiculo.Name = "btConsultaVeiculo";
             this.btConsultaVeiculo.Size = new System.Drawing.Size(628, 52);
@@ -156,15 +157,28 @@
             this.btConsultaVeiculo.UseVisualStyleBackColor = true;
             this.btConsultaVeiculo.Click += new System.EventHandler(this.btConsultaVeiculo_Click);
             // 
+            // btDeletarVeiculo
+            // 
+            this.btDeletarVeiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btDeletarVeiculo.Location = new System.Drawing.Point(62, 212);
+            this.btDeletarVeiculo.Margin = new System.Windows.Forms.Padding(4);
+            this.btDeletarVeiculo.Name = "btDeletarVeiculo";
+            this.btDeletarVeiculo.Size = new System.Drawing.Size(628, 52);
+            this.btDeletarVeiculo.TabIndex = 35;
+            this.btDeletarVeiculo.Text = "DELETAR VEÍCULO";
+            this.btDeletarVeiculo.UseVisualStyleBackColor = true;
+            this.btDeletarVeiculo.Click += new System.EventHandler(this.btDeletarVeiculo_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(743, 568);
+            this.ClientSize = new System.Drawing.Size(743, 608);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.btDeletarVeiculo);
             this.Controls.Add(this.btDeletarMulta);
             this.Controls.Add(this.btAtualizarMulta);
             this.Controls.Add(this.btAtualizar);
@@ -190,6 +204,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btConsultaVeiculo;
+        private System.Windows.Forms.Button btDeletarVeiculo;
     }
 }
 

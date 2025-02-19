@@ -11,7 +11,7 @@ namespace AppRegistroMultas.Formulario
     {
         int idVeiculo;
 
-        public List<Veiculo> listaVeiculos = new List<Veiculo>();    
+        public List<Models.Veiculo> listaVeiculos = new List<Models.Veiculo>();    
         public List<Multa> listaMultasTemp = new List<Multa>();
 
         public FormCadastroMulta()

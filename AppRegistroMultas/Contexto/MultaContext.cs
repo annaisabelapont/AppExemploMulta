@@ -70,7 +70,7 @@ namespace AppRegistroMultas.Contexto
 
             catch (Exception ex)
             {
-                
+                MessageBox.Show(ex.Message);
             }
 
             finally
@@ -120,18 +120,14 @@ namespace AppRegistroMultas.Contexto
 
         public void DeletarMulta(Multa multa)
         {
-            // Comando SQL para atualizar os dados da pessoa
             string sql = "DELETE FROM MULTA WHERE Id = @Id";
 
             try
             {
                 MySqlCommand comando = new MySqlCommand(sql, conexao);
 
-                // Adicionando parâmetros para evitar SQL Injection
-                comando.Parameters.AddWithValue("@Descricao", multa.Descricao);
-                comando.Parameters.AddWithValue("@ValorMulta", multa.ValorMulta);
-                comando.Parameters.AddWithValue("@VeiculoId", multa.VeiculoId);
                 comando.Parameters.AddWithValue("@Id", multa.Id);
+
                 conexao.Open(); // Abrir conexão com o banco
                 int linhasAfetadas = comando.ExecuteNonQuery(); // Executa o comando e retorna quantas linhas foram alteradas
 

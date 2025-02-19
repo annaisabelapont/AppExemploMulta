@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using AppRegistroMultas.Formulario;
+using AppRegistroMultas.Formulario.Veiculo;
 
 namespace AppRegistroMultas
 {
@@ -50,6 +51,12 @@ namespace AppRegistroMultas
         private void btConsultaVeiculo_Click(object sender, EventArgs e)
         {
             FormConsultarVeiculo form = new FormConsultarVeiculo();
+            form.ShowDialog();
+        }
+
+        private void btDeletarVeiculo_Click(object sender, EventArgs e)
+        {
+            FormDeletarVeiculo form = new FormDeletarVeiculo();
             form.ShowDialog();
         }
     }
